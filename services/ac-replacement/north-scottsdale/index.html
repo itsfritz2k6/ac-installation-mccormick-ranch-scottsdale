@@ -36,7 +36,20 @@ h1,h2,h3,h4,.display,.faq summary{font-family:'Anton','Saira Condensed',Georgia,
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "HVACBusiness", "name": "AC Installation McCormick Ranch Scottsdale", "image": "https://acinstallationmccormickranchscottsdale.site/logo.png", "url": "https://acinstallationmccormickranchscottsdale.site/", "telephone": "(623) 286-2759", "email": "hello@acinstallationmccormickranchscottsdale.site", "priceRange": "$$", "address": {"@type": "PostalAddress", "streetAddress": "8674 E Via de Ventura", "addressLocality": "Scottsdale", "addressRegion": "AZ", "postalCode": "85258", "addressCountry": "US"}, "areaServed": {"@type": "City", "name": "Scottsdale, AZ"}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "07:00", "closes": "18:00"}]}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://acinstallationmccormickranchscottsdale.site/"}, {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://acinstallationmccormickranchscottsdale.site/services/"}, {"@type": "ListItem", "position": 3, "name": "AC Replacement", "item": "https://acinstallationmccormickranchscottsdale.site/services/ac-replacement/"}, {"@type": "ListItem", "position": 4, "name": "North Scottsdale", "item": "https://acinstallationmccormickranchscottsdale.site/services/ac-replacement/north-scottsdale/"}]}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I know if I need an AC replacement?", "acceptedAnswer": {"@type": "Answer", "text": "Signs include frequent breakdowns, rising energy bills, and uneven cooling throughout your home in North Scottsdale."}}, {"@type": "Question", "name": "What types of air conditioning systems are available?", "acceptedAnswer": {"@type": "Answer", "text": "Options range from central air systems to ductless mini-splits, suitable for various home sizes and layouts."}}, {"@type": "Question", "name": "How long does an AC replacement take?", "acceptedAnswer": {"@type": "Answer", "text": "Typically, a full system changeout can be completed in one day, depending on the complexity of the installation."}}, {"@type": "Question", "name": "Can I finance my new AC system?", "acceptedAnswer": {"@type": "Answer", "text": "Many licensed HVAC contractors offer financing options, making it easier to manage the cost of your new system."}}]}</script>
-<style>.quiz-fee{background:#eef7f5;border:1px solid #cfe6e0;border-radius:12px;padding:12px 14px;margin:4px 0 14px;font-size:14px;line-height:1.5;color:#26413c}.quiz-fee strong{color:#12302b}#qnote{width:100%;font:inherit;font-size:15px;color:inherit;background:#fff;border:1px solid #d8dee5;border-radius:10px;padding:10px 12px;resize:vertical;min-height:56px}#qnote:focus{outline:2px solid #17a08c;outline-offset:1px}.quiz-echo{display:none;font-size:13px;font-weight:700;color:#17a08c;margin:-4px 0 10px}.quiz-echo.on{display:block}.qopt{transition:transform .12s ease}.qopt:hover{transform:translateY(-1px)}@media(prefers-reduced-motion:reduce){.qopt{transition:none}.qopt:hover{transform:none}.quiz-step.active{animation:none!important;opacity:1!important}}</style></head><body>
+<style>.quiz-fee{background:#eef7f5;border:1px solid #cfe6e0;border-radius:12px;padding:12px 14px;margin:4px 0 14px;font-size:14px;line-height:1.5;color:#26413c}.quiz-fee strong{color:#12302b}#qnote{width:100%;font:inherit;font-size:15px;color:inherit;background:#fff;border:1px solid #d8dee5;border-radius:10px;padding:10px 12px;resize:vertical;min-height:56px}#qnote:focus{outline:2px solid #17a08c;outline-offset:1px}.quiz-echo{display:none;font-size:13px;font-weight:700;color:#17a08c;margin:-4px 0 10px}.quiz-echo.on{display:block}.qopt{transition:transform .12s ease}.qopt:hover{transform:translateY(-1px)}@media(prefers-reduced-motion:reduce){.qopt{transition:none}.qopt:hover{transform:none}.quiz-step.active{animation:none!important;opacity:1!important}}</style><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H8DESHDK20"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H8DESHDK20');
+  document.addEventListener('click',function(e){
+    var a=e.target&&e.target.closest?e.target.closest('a[href^="tel:"]'):null;
+    if(a&&window.gtag)gtag('event','phone_call',{link_url:a.getAttribute('href')});
+  },true);
+</script>
+</head><body>
 <header class="nav" id="nav">
   <div class="wrap nav-inner">
     <a href="/" class="brandlink" aria-label="AC Installation McCormick Ranch Scottsdale home">
@@ -249,6 +262,7 @@ if(vis&&'IntersectionObserver'in window){new IntersectionObserver(function(es,o)
       saved=true;
       fetch('https://cockpit.fritzink.com/fleet-lead',{method:'POST',headers:{'Content-Type':'application/json'},
         body:JSON.stringify(Object.assign({site:'mccormick',source:'Quiz Popup',stage:'contact'},data))}).catch(function(){});
+      if(window.gtag)gtag('event','generate_lead',{form_name:'AC quiz',stage:'contact'});
     }
     show(3);
   });
@@ -271,7 +285,7 @@ if(vis&&'IntersectionObserver'in window){new IntersectionObserver(function(es,o)
       .then(function(r){ return r.json().catch(function(){ return null; }); })
       .then(function(j){
         if(!j||!j.ok) throw new Error('not saved');
-        form.style.display='none'; if(prog) prog.style.width='100%'; done.classList.add('show');
+        form.style.display='none'; if(prog) prog.style.width='100%'; done.classList.add('show'); if(window.gtag)gtag('event','schedule_service',{form_name:'AC quiz',method:'quiz'});
       })
       .catch(function(){
         btn.disabled=false; btn.innerHTML='Book My Visit &rarr;';
